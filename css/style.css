@@ -3,20 +3,20 @@
     --color-white-smoke : #f5f5f5;
     --color-alabaster : #ede7dc;
     --color-timberwolf : #d3d3d3;
-    --color-silver : #a9a9a9;
-    --color-davyGray : #505050;
+    --color-silver : #0f0e0e;
+    --color-davyGray : #162b4e;
     --color-jet : #2e2e2e;
-    --color-black : #000000;
+    --color-black : #162b4e;
 }
 
 @font-face {
     font-family: 'Modak';
-    src: url('../storage/fonts/Modak-Regular.ttf');
+    src: url('../storage/fonts/rubik/Rubik-ExtraBold.ttf');
 }
 
 @font-face {
     font-family: 'Rubik-black';
-    src: url(../storage/fonts/rubik/Rubik-Black.ttf);
+    src: url(../storage/fonts/rubik/Rubik-Medium.ttf);
 }
 
 body {
@@ -74,20 +74,55 @@ body {
     color: var(--color-white-smoke);
     width: 610px;
 }
-.main-proyects{
+.main-proyects {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--color-jet);
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: var(--color-jet);
+    padding: 40px 20px;
+    gap: 30px;
     height: 100vh;
 }
 
-.main-certificates{
+/* Envuelve los proyectos en fila */
+.projects-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Botón centrado abajo */
+.more-projects {
+    margin-top: 20px;
+}
+
+.more-projects-btn {
+    background-color: #ffffff;
+    color: var(--color-jet);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-projects-btn:hover {
     background-color: var(--color-davyGray);
-    align-items: center;
-    height: 100vh;   
+    color: #ffffff;
+}
+
+
+
+.main-certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-davyGray);
+    gap: 20px;
+    padding: 20px;
+    height: 100vh; 
 }
 
 .certificates{
