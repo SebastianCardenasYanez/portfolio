@@ -74,6 +74,7 @@ body {
     color: var(--color-white-smoke);
     width: 610px;
 }
+
 .main-proyects {
     display: flex;
     flex-direction: column;
@@ -322,4 +323,102 @@ body {
 
 .animate-left {
     animation: slideLeft 50s linear infinite;
+}
+
+@media (max-width: 768px) {
+
+    .main-introduction{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    height: auto;
+    }
+
+    .beleves-section{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .section-select-views {
+        display: none;
+    }
+
+    .main-introduction{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    height: auto;
+    }
+
+    .p-text-main{
+    font-size: 23px;
+    width: auto;
+    text-align: center;
+    padding: 0 10px;
+    }
+
+    .beleves-section{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    }
+
+    .div-misions-section{
+        margin: 10px 0;
+    }
+
+    .main-proyects{
+        height: auto;
+    }
+
+    .flip-card-back {
+    padding: 0px 10px;
+    }
+    .flip-card-back span {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    .flip-card-back p {
+        font-family: "Rubik-black", sans-serif;
+        color: #4b5563;
+    }
+
+    .main-certificates{
+        height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .img-profesional-dev{
+        width: 80vw;
+    }
+
+    .beleves-section{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 10px;
+    height: auto;
+    }
+
+    .div-misions-section{
+    width: auto;
+    height: auto;
+    padding: 20px 10px; 
+    }
 }
